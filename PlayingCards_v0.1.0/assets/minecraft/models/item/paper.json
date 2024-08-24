@@ -1,0 +1,68 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/paper"
+  },
+
+  "overrides": 
+  [
+    { "predicate": {"custom_model_data": 52000}, "model": "cards:item/base"},
+
+    { "predicate": {"custom_model_data": 52001}, "model": "cards:item/s_01"},
+    { "predicate": {"custom_model_data": 52002}, "model": "cards:item/s_02"},
+    { "predicate": {"custom_model_data": 52003}, "model": "cards:item/s_03"},
+    { "predicate": {"custom_model_data": 52004}, "model": "cards:item/s_04"},
+    { "predicate": {"custom_model_data": 52005}, "model": "cards:item/s_05"},
+    { "predicate": {"custom_model_data": 52006}, "model": "cards:item/s_06"},
+    { "predicate": {"custom_model_data": 52007}, "model": "cards:item/s_07"},
+    { "predicate": {"custom_model_data": 52008}, "model": "cards:item/s_08"},
+    { "predicate": {"custom_model_data": 52009}, "model": "cards:item/s_09"},
+    { "predicate": {"custom_model_data": 52010}, "model": "cards:item/s_10"},
+    { "predicate": {"custom_model_data": 52011}, "model": "cards:item/s_11"},
+    { "predicate": {"custom_model_data": 52012}, "model": "cards:item/s_12"},
+    { "predicate": {"custom_model_data": 52013}, "model": "cards:item/s_13"},
+
+    { "predicate": {"custom_model_data": 52014}, "model": "cards:item/h_01"},
+    { "predicate": {"custom_model_data": 52015}, "model": "cards:item/h_02"},
+    { "predicate": {"custom_model_data": 52016}, "model": "cards:item/h_03"},
+    { "predicate": {"custom_model_data": 52017}, "model": "cards:item/h_04"},
+    { "predicate": {"custom_model_data": 52018}, "model": "cards:item/h_05"},
+    { "predicate": {"custom_model_data": 52019}, "model": "cards:item/h_06"},
+    { "predicate": {"custom_model_data": 52020}, "model": "cards:item/h_07"},
+    { "predicate": {"custom_model_data": 52021}, "model": "cards:item/h_08"},
+    { "predicate": {"custom_model_data": 52022}, "model": "cards:item/h_09"},
+    { "predicate": {"custom_model_data": 52023}, "model": "cards:item/h_10"},
+    { "predicate": {"custom_model_data": 52024}, "model": "cards:item/h_11"},
+    { "predicate": {"custom_model_data": 52025}, "model": "cards:item/h_12"},
+    { "predicate": {"custom_model_data": 52026}, "model": "cards:item/h_13"},
+
+    { "predicate": {"custom_model_data": 52027}, "model": "cards:item/c_01"},
+    { "predicate": {"custom_model_data": 52028}, "model": "cards:item/c_02"},
+    { "predicate": {"custom_model_data": 52029}, "model": "cards:item/c_03"},
+    { "predicate": {"custom_model_data": 52030}, "model": "cards:item/c_04"},
+    { "predicate": {"custom_model_data": 52031}, "model": "cards:item/c_05"},
+    { "predicate": {"custom_model_data": 52032}, "model": "cards:item/c_06"},
+    { "predicate": {"custom_model_data": 52033}, "model": "cards:item/c_07"},
+    { "predicate": {"custom_model_data": 52034}, "model": "cards:item/c_08"},
+    { "predicate": {"custom_model_data": 52035}, "model": "cards:item/c_09"},
+    { "predicate": {"custom_model_data": 52036}, "model": "cards:item/c_10"},
+    { "predicate": {"custom_model_data": 52037}, "model": "cards:item/c_11"},
+    { "predicate": {"custom_model_data": 52038}, "model": "cards:item/c_12"},
+    { "predicate": {"custom_model_data": 52039}, "model": "cards:item/c_13"},
+
+    { "predicate": {"custom_model_data": 52040}, "model": "cards:item/d_01"},
+    { "predicate": {"custom_model_data": 52041}, "model": "cards:item/d_02"},
+    { "predicate": {"custom_model_data": 52042}, "model": "cards:item/d_03"},
+    { "predicate": {"custom_model_data": 52043}, "model": "cards:item/d_04"},
+    { "predicate": {"custom_model_data": 52044}, "model": "cards:item/d_05"},
+    { "predicate": {"custom_model_data": 52045}, "model": "cards:item/d_06"},
+    { "predicate": {"custom_model_data": 52046}, "model": "cards:item/d_07"},
+    { "predicate": {"custom_model_data": 52047}, "model": "cards:item/d_08"},
+    { "predicate": {"custom_model_data": 52048}, "model": "cards:item/d_09"},
+    { "predicate": {"custom_model_data": 52049}, "model": "cards:item/d_10"},
+    { "predicate": {"custom_model_data": 52050}, "model": "cards:item/d_11"},
+    { "predicate": {"custom_model_data": 52051}, "model": "cards:item/d_12"},
+    { "predicate": {"custom_model_data": 52052}, "model": "cards:item/d_13"}
+
+  ]
+}
