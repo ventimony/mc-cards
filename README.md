@@ -7,10 +7,10 @@ Additionally, this project also comes with a datapack that defines a function `c
 
 ## Usage
 ### Resource Pack
-Place `PlayingCards_vX.X.X/` in your resource packs folder and select the resource pack in Minecraft to load the models.
+Place `PlayingCards/` in your resource packs folder and select the resource pack in Minecraft to load the models.
 
 ### Datapack
-Place `PlayingCards_datapack_vX.X.X/` in the datapacks folder of a Minecraft world. Run the following function to give yourself a bundle of cards
+Place `PlayingCards_datapack/` in the datapacks folder of a Minecraft world. Run the following function to give yourself a bundle of cards
 ```
 \function cards:deck
 ```
