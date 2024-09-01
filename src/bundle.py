@@ -1,8 +1,8 @@
 import json
 import os
 
-DIR = "PlayingCards_datapack_v0.1.0/data/cards/function"
-FILE = "deck.mcfunction"
+DIR = "PlayingCards_datapack/data/cards/function"
+FILE = "deck_t.mcfunction"
 
 if __name__ == "__main__":
   os.makedirs(DIR, exist_ok=True)
@@ -11,7 +11,7 @@ if __name__ == "__main__":
   items = ", ".join([
     json.dumps(
       {
-        "id": "minecraft:carved_pumpkin", 
+        "id": "minecraft:paper", 
         "count": 1, 
         "components": {"minecraft:custom_model_data": idx}
         })

@@ -9,6 +9,9 @@ Additionally, this project also comes with a datapack that defines a function `c
 ### Resource Pack
 Place `PlayingCards/` in your resource packs folder and select the resource pack in Minecraft to load the models.
 
+#### Variants
+From `v0.1.2`, variant resource packs have been created, found in `variants/`. These variants are meant to be used together with the base `PlayingCards/` pack.
+
 ### Datapack
 Place `PlayingCards_datapack/` in the datapacks folder of a Minecraft world. Run the following function to give yourself a bundle of cards
 ```

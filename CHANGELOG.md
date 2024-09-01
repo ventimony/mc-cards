@@ -6,8 +6,11 @@ All notable changes to this project will be documented in this file.
 Pending changes for v0.1.2 - v0.2.0
 
 ### Added
-- Variant resource pack `PlayingCards_lg` adjusted to be displayed larger in item frames
+- Variants! To be used in addition to the base pack
+  - `PlayingCards_lg` adjusted to be displayed larger in item frames
+  - `PlayingCards_canton` with alternate textures
 - Models for jokers (untextured) and card with 2 backs
+- Custom card names with localization support
 
 ### Changed
 - Centered models around pivot point
