@@ -2,8 +2,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
-Pending changes for v0.1.2 - v0.2.0
+## [0.1.2] - 2024-09-01
 
 ### Added
 - Variants! To be used in addition to the base pack
