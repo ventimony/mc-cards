@@ -10,6 +10,7 @@ Pending changes for v0.1.2 - v0.2.0
   - `PlayingCards_lg` adjusted to be displayed larger in item frames
   - `PlayingCards_canton` with alternate textures
 - Models for jokers (untextured) and card with 2 backs
+- Custom card names with localization support
 
 ### Changed
 - Centered models around pivot point
