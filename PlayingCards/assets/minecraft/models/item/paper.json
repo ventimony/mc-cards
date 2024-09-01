@@ -62,7 +62,11 @@
     { "predicate": {"custom_model_data": 52049}, "model": "cards:item/d_10"},
     { "predicate": {"custom_model_data": 52050}, "model": "cards:item/d_11"},
     { "predicate": {"custom_model_data": 52051}, "model": "cards:item/d_12"},
-    { "predicate": {"custom_model_data": 52052}, "model": "cards:item/d_13"}
+    { "predicate": {"custom_model_data": 52052}, "model": "cards:item/d_13"},
+
+    { "predicate": {"custom_model_data": 52053}, "model": "cards:item/joker_red"},
+    { "predicate": {"custom_model_data": 52054}, "model": "cards:item/joker_black"},
+    { "predicate": {"custom_model_data": 52055}, "model": "cards:item/back"}
 
   ]
 }

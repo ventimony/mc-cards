@@ -7,6 +7,10 @@ Pending changes for v0.1.2 - v0.2.0
 
 ### Added
 - Variant resource pack `PlayingCards_lg` adjusted to be displayed larger in item frames
+- Models for jokers (untextured) and card with 2 backs
+
+### Changed
+- Centered models around pivot point
 
 
 ## [0.1.1] - 2024-08-26
@@ -18,6 +22,7 @@ Minor changes to data pack
 - Deck function
 
 ### Changed
+- Renamed directories to be version agnostic
 - Function `cards:deck` now gives remodeled paper instead of pumpkins
 
 ### Fixed
