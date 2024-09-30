@@ -1,3 +1,6 @@
 {
-  "parent": "cards:item/base"
+  "parent": "cards:item/base",
+  "textures": {
+    "0": "cards:item/j_02"
+  }
 }
