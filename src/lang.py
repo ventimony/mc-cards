@@ -10,6 +10,14 @@ VAL = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 SUIT = "♠♥♣♦"
 
 def get_name(idx: int) -> str:
+  """Get card name from index
+
+  Args:
+      idx (int): Card index
+
+  Returns:
+      str: Name of card
+  """
   match idx:
     case 0:
       return "Blank"
@@ -23,6 +31,14 @@ def get_name(idx: int) -> str:
   return f"{SUIT[(idx-1)//13]} {VAL[(idx-1)%13]}"
 
 def create_locale(locale: str, out: str, *, namespace: str = "card", indexer: Callable[[int], str] = get_name):
+  """Create locale file
+
+  Args:
+      locale (str): Locale code
+      out (str): Output directory
+      namespace (str, optional): Prefix namespace for translation key. Defaults to "card".
+      indexer (Callable[[int], str], optional): A function to map card indices to names. Defaults to `get_name`.
+  """
   os.makedirs(out, exist_ok=True)
 
   locale = {

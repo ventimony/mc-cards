@@ -2,10 +2,17 @@ from argparse import ArgumentParser
 import os
 
 DIR = "PlayingCards_datapack/data/cards/function"
-FILE = "deck.mcfunction"
+FILE = "deck"
 
 
 def build(directory: str, file: str, start: int = 52000):
+  """Generates a mcfunction file that gives the player a custom filled bundle
+
+  Args:
+      directory (str): Output directory
+      file (str): Function name
+      start (int, optional): Starting index for model data. Defaults to 52000.
+  """
   os.makedirs(directory, exist_ok=True)
 
   idxs = list(range(1, 53)) + [0, 53, 54, 55]
@@ -15,10 +22,10 @@ def build(directory: str, file: str, start: int = 52000):
 
   func = f"give @s minecraft:bundle[minecraft:bundle_contents=[{items}]] 1" 
   
-  with open(os.path.join(directory, file), 'w') as f:
+  with open(os.path.join(directory, f"{file}.mcfunction"), 'w') as f:
     f.write(func)
 
-  print(f"Generated function {file} in {directory} with {start=}")
+  print(f"Generated function `{file}` in {directory} with {start=}")
 
 if __name__ == "__main__":
   parser = ArgumentParser()
