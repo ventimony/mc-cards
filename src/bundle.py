@@ -1,26 +1,30 @@
-import json
+from argparse import ArgumentParser
 import os
 
 DIR = "PlayingCards_datapack/data/cards/function"
-FILE = "deck_t.mcfunction"
+FILE = "deck.mcfunction"
 
-if __name__ == "__main__":
-  os.makedirs(DIR, exist_ok=True)
 
-  start = 52000
+def build(directory: str, file: str, start: int = 52000):
+  os.makedirs(directory, exist_ok=True)
+
+  idxs = list(range(1, 53)) + [0, 53, 54, 55]
   items = ", ".join([
-    json.dumps(
-      {
-        "id": "minecraft:paper", 
-        "count": 1, 
-        "components": {"minecraft:custom_model_data": idx}
-        })
-    for idx in range(52001, 52053)
+    f"""{{"id": "minecraft:paper", "count": 1, "components": {{"minecraft:custom_model_data": {start + idx}, "minecraft:item_name": '{{"translate":"card.{idx}"}}'}}}}""" for idx in idxs
   ])
 
   func = f"give @s minecraft:bundle[minecraft:bundle_contents=[{items}]] 1" 
   
-  with open(os.path.join(DIR, FILE), 'w') as file:
-    file.write(func)
+  with open(os.path.join(directory, file), 'w') as f:
+    f.write(func)
 
-  print("Generated function")
+  print(f"Generated function {file} in {directory} with {start=}")
+
+if __name__ == "__main__":
+  parser = ArgumentParser()
+  parser.add_argument("--out", help="Path of output directory", type=str, default=DIR)
+  parser.add_argument("--file", help="Name of output file", type=str, default=FILE)
+  parser.add_argument("--start", help="Starting index", type=int, default=52000)
+  args = parser.parse_args()
+
+  build(args.out, args.file, args.start)
