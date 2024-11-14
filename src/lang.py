@@ -1,6 +1,8 @@
 import json
 import os
 
+from collections.abc import Callable
+
 DIR = "PlayingCards/assets/cards/lang"
 FILE = "en_us.json"
 
@@ -20,15 +22,18 @@ def get_name(idx: int) -> str:
 
   return f"{SUIT[(idx-1)//13]} {VAL[(idx-1)%13]}"
 
-if __name__ == "__main__":
-  os.makedirs(DIR, exist_ok=True)
+def create_locale(locale: str, out: str, *, namespace: str = "card", indexer: Callable[[int], str] = get_name):
+  os.makedirs(out, exist_ok=True)
 
   locale = {
-    f"card.{idx}": get_name(idx)
+    f"{namespace}.{idx}": indexer(idx)
     for idx in range(56)
   }
   
-  with open(os.path.join(DIR, FILE), 'w') as file:
+  with open(os.path.join(out, f"{locale}.json"), 'w') as file:
     file.write(json.dumps(locale, indent=1))
 
-  print("Generated locale")
+  print("Generated {locale} in {out}")
+
+if __name__ == "__main__":
+  create_locale("en_us", DIR)
