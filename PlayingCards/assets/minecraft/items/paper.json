@@ -1,0 +1,418 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/paper"
+    },
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:custom_model_data",
+          "index": 1,
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "cards:item/blank"
+          },
+          "cases": [
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/blank"
+              },
+              "when": "blank"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/joker_red"
+              },
+              "when": "joker_red"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/joker_black"
+              },
+              "when": "joker_black"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/back"
+              },
+              "when": "back"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_01"
+              },
+              "when": "diamond.01"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_02"
+              },
+              "when": "diamond.02"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_03"
+              },
+              "when": "diamond.03"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_04"
+              },
+              "when": "diamond.04"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_05"
+              },
+              "when": "diamond.05"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_06"
+              },
+              "when": "diamond.06"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_07"
+              },
+              "when": "diamond.07"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_08"
+              },
+              "when": "diamond.08"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_09"
+              },
+              "when": "diamond.09"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_10"
+              },
+              "when": "diamond.10"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_11"
+              },
+              "when": "diamond.11"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_12"
+              },
+              "when": "diamond.12"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/diamond/diamond_13"
+              },
+              "when": "diamond.13"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_01"
+              },
+              "when": "club.01"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_02"
+              },
+              "when": "club.02"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_03"
+              },
+              "when": "club.03"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_04"
+              },
+              "when": "club.04"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_05"
+              },
+              "when": "club.05"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_06"
+              },
+              "when": "club.06"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_07"
+              },
+              "when": "club.07"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_08"
+              },
+              "when": "club.08"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_09"
+              },
+              "when": "club.09"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_10"
+              },
+              "when": "club.10"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_11"
+              },
+              "when": "club.11"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_12"
+              },
+              "when": "club.12"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/club/club_13"
+              },
+              "when": "club.13"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_01"
+              },
+              "when": "heart.01"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_02"
+              },
+              "when": "heart.02"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_03"
+              },
+              "when": "heart.03"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_04"
+              },
+              "when": "heart.04"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_05"
+              },
+              "when": "heart.05"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_06"
+              },
+              "when": "heart.06"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_07"
+              },
+              "when": "heart.07"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_08"
+              },
+              "when": "heart.08"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_09"
+              },
+              "when": "heart.09"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_10"
+              },
+              "when": "heart.10"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_11"
+              },
+              "when": "heart.11"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_12"
+              },
+              "when": "heart.12"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/heart/heart_13"
+              },
+              "when": "heart.13"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_01"
+              },
+              "when": "spade.01"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_02"
+              },
+              "when": "spade.02"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_03"
+              },
+              "when": "spade.03"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_04"
+              },
+              "when": "spade.04"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_05"
+              },
+              "when": "spade.05"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_06"
+              },
+              "when": "spade.06"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_07"
+              },
+              "when": "spade.07"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_08"
+              },
+              "when": "spade.08"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_09"
+              },
+              "when": "spade.09"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_10"
+              },
+              "when": "spade.10"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_11"
+              },
+              "when": "spade.11"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_12"
+              },
+              "when": "spade.12"
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "cards:item/spade/spade_13"
+              },
+              "when": "spade.13"
+            }
+          ]
+        },
+        "when": "cards"
+      }
+    ]
+  }
+}

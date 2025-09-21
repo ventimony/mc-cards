@@ -2,6 +2,6 @@
   "parent": "cards:item/base",
   "textures": {
     "value": "cards:item/empty",
-    "suit": "cards:item/back"
+    "suit": "cards:item/empty"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "cards:item/base",
+  "textures": {
+    "value": "cards:item/value/r_11",
+    "suit": "cards:item/suit/diamond"
+  }
+}
