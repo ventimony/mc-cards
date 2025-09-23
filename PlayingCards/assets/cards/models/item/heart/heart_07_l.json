@@ -1,0 +1,7 @@
+{
+  "parent": "cards:item/large",
+  "textures": {
+    "value": "cards:item/value/r_07",
+    "suit": "cards:item/suit/heart"
+  }
+}

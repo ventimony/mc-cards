@@ -19,393 +19,1905 @@
           "cases": [
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/blank"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/blank"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "blank"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/joker_red"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/joker_red"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/joker_red_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "joker_red"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/joker_black"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/joker_black"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/joker_black_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "joker_black"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/back"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/back"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/back_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "back"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_01"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_01"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_01_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.01"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_02"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_02"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_02_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.02"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_03"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_03"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_03_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.03"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_04"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_04"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_04_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.04"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_05"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_05"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_05_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.05"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_06"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_06"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_06_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.06"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_07"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_07"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_07_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.07"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_08"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_08"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_08_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.08"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_09"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_09"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_09_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.09"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_10"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_10"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_10_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.10"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_11"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_11"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_11_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.11"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_12"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_12"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_12_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.12"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/diamond/diamond_13"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/diamond/diamond_13"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/diamond/diamond_13_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "diamond.13"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_01"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_01"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_01_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.01"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_02"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_02"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_02_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.02"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_03"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_03"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_03_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.03"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_04"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_04"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_04_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.04"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_05"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_05"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_05_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.05"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_06"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_06"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_06_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.06"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_07"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_07"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_07_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.07"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_08"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_08"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_08_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.08"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_09"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_09"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_09_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.09"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_10"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_10"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_10_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.10"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_11"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_11"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_11_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.11"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_12"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_12"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_12_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.12"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/club/club_13"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/club/club_13"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/club/club_13_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "club.13"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_01"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_01"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_01_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.01"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_02"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_02"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_02_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.02"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_03"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_03"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_03_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.03"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_04"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_04"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_04_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.04"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_05"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_05"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_05_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.05"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_06"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_06"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_06_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.06"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_07"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_07"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_07_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.07"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_08"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_08"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_08_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.08"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_09"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_09"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_09_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.09"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_10"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_10"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_10_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.10"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_11"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_11"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_11_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.11"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_12"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_12"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_12_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.12"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/heart/heart_13"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/heart/heart_13"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/heart/heart_13_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "heart.13"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_01"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_01"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_01_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.01"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_02"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_02"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_02_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.02"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_03"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_03"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_03_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.03"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_04"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_04"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_04_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.04"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_05"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_05"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_05_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.05"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_06"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_06"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_06_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.06"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_07"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_07"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_07_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.07"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_08"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_08"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_08_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.08"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_09"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_09"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_09_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.09"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_10"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_10"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_10_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.10"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_11"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_11"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_11_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.11"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_12"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_12"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_12_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.12"
             },
             {
               "model": {
-                "type": "minecraft:model",
-                "model": "cards:item/spade/spade_13"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "cards:item/spade/spade_13"
+                },
+                "cases": [
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/blank"
+                    },
+                    "when": [
+                      "thirdperson_lefthand",
+                      "thirdperson_righthand"
+                    ]
+                  },
+                  {
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "cards:item/spade/spade_13_l"
+                    },
+                    "when": [
+                      "firstperson_lefthand",
+                      "firstperson_righthand",
+                      "fixed"
+                    ]
+                  }
+                ]
               },
               "when": "spade.13"
             }

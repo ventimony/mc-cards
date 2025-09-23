@@ -36,7 +36,7 @@ def gen_item(out: str, name: str, textures: dict[str, str], namespace: str, type
     json.dump(data, json_file, indent=2)
 
 
-def gen_items(out: str, items: list[tuple[str, dict[str, str]]]):
+def gen_items(out: str, items: list[tuple[str, dict[str, str]]], namespace: str = "cards", type: str = "item", parent: str = "base", ext: str = "json"):
   """Generate the item model files
 
   Args:
@@ -46,14 +46,13 @@ def gen_items(out: str, items: list[tuple[str, dict[str, str]]]):
 
   # Generate JSON files
   for (name, textures) in items:
-    gen_item(out, name, textures, "cards")
+    gen_item(out, name, textures, namespace, type, parent, ext)
   
   print("Generated item models files.")
-  pass
 
 def get_textures(suit: str, value: int, version: str = "0.1"):
   match version:
-    case "0.2":
+    case "0.2" | "0.2.1":
       match suit:
         case _ if suit in SUITS:
           colour = "r" if suit in RED else "b"
@@ -79,27 +78,77 @@ def get_textures(suit: str, value: int, version: str = "0.1"):
   return textures
 
 def gen_model_case(suit: str, value: int, prefix: str, version: str = "0.2"):
+  if suit in SUITS:
+    model = f"{prefix}/{suit}/{suit}_{value:02}"
+    when = f"{suit}.{value:02}"
+  else:
+    model = f"{prefix}/{suit}"
+    when = f"{suit}"
+  
   match version:
-    case _:
-      if suit in SUITS:
-        model = {
-          "model": {
-              "type": "minecraft:model",
-              "model": f"{prefix}/{suit}/{suit}_{value:02}"
-            },
-          "when": f"{suit}.{value:02}"
-        }
-        return model
+    case "0.2.1":
+      # display contexts
+      # first-person: large
+      # third: base + blank
+      # head: base (+ band?)
+      # gui: base
+      # ground: base
+      # fixed: large
 
       model = {
         "model": {
-            "type": "minecraft:model",
-            "model": f"{prefix}/{suit}"
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": { # base
+              "type": "minecraft:model",
+              "model": model
+            },
+            "cases": gen_display_contexts(model, prefix, version)
           },
-        "when": f"{suit}"
+        "when": when
       }
 
-  return model
+      return model
+
+  return {
+    "model": {
+        "type": "minecraft:model",
+        "model": model
+      },
+    "when": when
+  }
+
+def gen_display_contexts(model: str, prefix: str, version: str = "0.2"):
+  return [gen_display_context(context, model, prefix, version) for context in [
+    "blank", # thirdperson
+    "large", # firstperson, fixed
+    ]]
+
+def gen_display_context(context: str, model: str, prefix: str, version: str = "0.2"):
+  match context:
+    case "blank":
+      ctx = ["thirdperson_lefthand", "thirdperson_righthand"]
+      ctx_model = {
+        "type": "minecraft:model",
+        "model": f"{prefix}/blank"
+      }
+    case "large":
+      ctx = ["firstperson_lefthand", "firstperson_righthand", "fixed"]
+      ctx_model = {
+        "type": "minecraft:model",
+        "model": f"{model}_l"
+      }    
+    case _:
+      ctx = context
+      ctx_model = {
+        "type": "minecraft:model",
+        "model": model
+      } 
+
+  return {
+    "model": ctx_model,
+    "when": ctx
+  }
 
 def gen_model_cases(prefix: str, cards: list[tuple[str, int, str]], version: str = "0.2"):
   return [gen_model_case(suit, card, prefix, version) for (suit, card, _) in cards]
@@ -114,7 +163,7 @@ def gen_model(assets: str, name: str, cards: list[tuple[str, int, str]], version
   prefix = "cards:item"
   
   match version:
-    case "0.2":
+    case "0.2" | "0.2.1":
       out = "minecraft/items"
 
       model = {
@@ -175,7 +224,7 @@ def gen_cards(out: str, version: str):
   cards = [(card, 0, card) for card in cards]
 
   match version:
-    case "0.2":
+    case "0.2" | "0.2.1":
       for suit in SUITS:
         os.makedirs(f"{out}/{suit}", exist_ok=True)
       
@@ -187,7 +236,10 @@ def gen_cards(out: str, version: str):
   
   items = [(name, get_textures(suit, card, version)) for (suit, card, name) in cards]
   gen_items(out, items)
-  gen_model(ROOT, "paper", cards, "0.2")
+
+  items_large = [(f"{name}_l", get_textures(suit, card, version)) for (suit, card, name) in cards]
+  gen_items(out, items_large, parent="large")
+  gen_model(ROOT, "paper", cards, version)
 
 if __name__ == "__main__":
-  gen_cards(DIR, "0.2")
+  gen_cards(DIR, "0.2.1")
