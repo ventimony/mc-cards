@@ -7,6 +7,10 @@ All notable changes to this project will be documented in this file.
 - Model selection based on display context
   - Display using the `PlayingCards_lg` variant within item frames
   - Display as blank in thirdperson view (No more peeking!)
+- Recipes for all bundle colors
+
+### Changed
+- Recipe for a bundle of cards now uses a diamond instead of paper
 
 ## [0.2.0] - 2025-09-22
 ### Added
