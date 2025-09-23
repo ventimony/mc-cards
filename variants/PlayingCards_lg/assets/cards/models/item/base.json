@@ -21,8 +21,8 @@
 		},
 		{
 			"name": "suit",
-			"from": [2, 8.001, 4],
-			"to": [14, 8.001, 12],
+			"from": [2, 8.01, 4],
+			"to": [14, 8.01, 12],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.5, 8]},
 			"faces": {
 				"up": {"uv": [0, 0, 8, 12], "rotation": 90, "texture": "#suit"}
@@ -30,8 +30,8 @@
 		},
 		{
 			"name": "value",
-			"from": [2, 8.001, 4],
-			"to": [14, 8.001, 12],
+			"from": [2, 8.01, 4],
+			"to": [14, 8.01, 12],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.5, 8]},
 			"faces": {
 				"up": {"uv": [0, 0, 8, 12], "rotation": 90, "texture": "#value"}
@@ -39,8 +39,8 @@
 		},
 		{
 			"name": "overlay",
-			"from": [2, 8.002, 4],
-			"to": [14, 8.002, 12],
+			"from": [2, 8.02, 4],
+			"to": [14, 8.02, 12],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.5, 8]},
 			"faces": {
 				"up": {"uv": [0, 0, 8, 12], "rotation": 90, "texture": "#0"}
