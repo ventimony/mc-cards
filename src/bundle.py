@@ -32,7 +32,7 @@ def build(directory: str, file: str, start: int = 52000, version: str = "0.2"):
 
 def get_model_data(card: tuple[str, int, int], start: int = 52000, version: str = "0.2"):
   match version:
-    case "0.2":
+    case "0.2" | "0.2.1":
       (suit, value, _) = card
       match suit:
         case _ if suit in SUITS:
@@ -47,7 +47,7 @@ def get_model_data(card: tuple[str, int, int], start: int = 52000, version: str 
 
 def get_model_data_recipe(card: tuple[str, int, int], start: int = 52000, version: str = "0.2"):
   match version:
-    case "0.2":
+    case "0.2" | "0.2.1":
       (suit, value, _) = card
       match suit:
         case _ if suit in SUITS:
@@ -74,7 +74,7 @@ def get_equippable():
 
 def get_components(card: tuple[str, int, int], version: str = "0.2"):
   match version:
-    case "0.2":
+    case "0.2" | "0.2.1":
       data = f"""{{"minecraft:custom_model_data": {get_model_data(card, version)}, "minecraft:item_name": {{"translate":"{get_item_name(card, version)}"}}, "minecraft:equippable": {get_equippable()}}}"""
     case _:
       data = f"""{{"minecraft:custom_model_data": {get_model_data(card, version)}, "minecraft:item_name": '{{"translate":"{get_item_name(card, version)}"}}'}}"""
@@ -116,6 +116,8 @@ def gen_contents(cards: list[tuple[str, int, int]], version: str = "0.2"):
 
 def get_ingredients(version: str):
   match version:
+    case "0.2.1":
+      ingredients = ["minecraft:diamond", "minecraft:red_dye", "minecraft:bundle", "minecraft:black_dye"]
     case "0.2":
       ingredients = ["minecraft:paper", "minecraft:red_dye", "minecraft:bundle", "minecraft:black_dye"]
     case _:
@@ -123,7 +125,7 @@ def get_ingredients(version: str):
 
   return ingredients
 
-def gen_recipe(out: str, name: str, version: str = "0.2"):
+def gen_recipe(out: str, name: str, version: str = "0.2.1"):
   cards, idxs = get_cards()
   cards = [(suit, val, idx) for (suit, val), idx in zip(cards, idxs)]
   recipe = {
@@ -140,7 +142,7 @@ def gen_recipe(out: str, name: str, version: str = "0.2"):
   os.makedirs(out, exist_ok=True)
   
   with open(os.path.join(out, f"{name}.json"), 'w') as json_file:
-    json.dump(recipe, json_file, indent=2)
+    json.dump(recipe, json_file)
 
   print(f"Generated recipe `{name}` in {out}")
 
