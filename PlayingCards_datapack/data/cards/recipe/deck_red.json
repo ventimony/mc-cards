@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless", 
-  "ingredients": ["minecraft:diamond", "minecraft:red_dye", "minecraft:bundle", "minecraft:black_dye"], 
+  "ingredients": ["minecraft:diamond", "minecraft:red_dye", "minecraft:red_bundle", "minecraft:black_dye"], 
   "group": "cards:deck",
   "result": {
-    "id": "minecraft:bundle", 
+    "id": "minecraft:red_bundle", 
     "count": 1, 
     "components": {
       "bundle_contents": [
