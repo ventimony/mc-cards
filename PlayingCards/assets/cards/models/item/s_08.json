@@ -1,6 +1,0 @@
-{
-  "parent": "cards:item/base",
-  "textures": {
-    "0": "cards:item/s_08"
-  }
-}

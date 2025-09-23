@@ -1,6 +1,7 @@
 {
   "parent": "cards:item/base",
   "textures": {
-    "0": "cards:item/j_01"
+    "value": "cards:item/empty",
+    "suit": "cards:item/joker_black"
   }
 }
